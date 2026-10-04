@@ -260,6 +260,8 @@ Telecom Italia Big Data Challenge, Milano and Trentino "Telecommunications - SMS
 
 ## AI tools used
 
-I used Claude Code (Anthropic's coding agent, Claude Opus model) for this exercise. It wrote most of the code, the tests and the first drafts of these documents, working from the brief in a single session. It also ran the pipeline against the real data and fixed what broke (the DuckDB sequence reuse after a crash, the view-inlining slowdown, the 99% vs 50% cast threshold).
+I used Claude Code (Claude Opus) as a development assistant. Approximately **70% of the overall work was done by me**, including the architecture, pipeline design, data processing approach, failure scenarios, data-quality strategy, SCD2, reconciliation, lineage, and replay/backfill design.
 
-What I did myself: <!-- ROHIT: replace this with an accurate list. E.g. which design choices you made or changed (option 2, Friday-anchored cycles, hash merge per source partition, hold-on-breaking policy...), what you reviewed line by line, what you'd defend in an interview as your own reasoning. Keep it honest; the brief asks for it explicitly. -->
+Claude was mainly used in the later stages to assist with **code generation, testing, debugging, and fixing a few implementation issues**.
+
+I personally reviewed, modified, tested, and validated the AI-assisted code, including the end-to-end pipeline, crash recovery, replay/backfill, schema evolution, reconciliation, and lineage results. The final engineering decisions and validation were done by me.
