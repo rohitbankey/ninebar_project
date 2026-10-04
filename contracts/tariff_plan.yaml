@@ -1,0 +1,17 @@
+# Interconnect / roaming tariff by counterpart country code. Self-modelled.
+# Rates are illustrative: the source measures are anonymised activity units, not
+# minutes or megabytes, so any "charge" built on them is a shape, not money.
+dataset: tariff_plan
+owner: wholesale-billing
+format: {delimiter: ",", header: required}
+policy: {additive: auto, breaking: hold}
+quarantine_threshold: 0.0
+versions:
+  - version: "1.0"
+    columns:
+      - {name: country_code,  type: INTEGER, nullable: false, min: 0, max: 999999}
+      - {name: zone,          type: VARCHAR, nullable: false, accepted: [DOMESTIC, EU, ROW, UNKNOWN]}
+      - {name: plan_name,     type: VARCHAR, nullable: false}
+      - {name: rate_sms,      type: DOUBLE,  nullable: false, min: 0, max: 10}
+      - {name: rate_call,     type: DOUBLE,  nullable: false, min: 0, max: 10}
+      - {name: rate_internet, type: DOUBLE,  nullable: false, min: 0, max: 10}

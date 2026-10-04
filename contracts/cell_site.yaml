@@ -1,0 +1,20 @@
+# Cell-site reference. Self-modelled: geometry comes from the open grid files,
+# the network attributes are generated (see ninebar/reference.py). Delivered as
+# full snapshots; silver keeps SCD2 history.
+dataset: cell_site
+owner: radio-network-planning
+format: {delimiter: ",", header: required}
+policy: {additive: auto, breaking: hold}
+quarantine_threshold: 0.0
+versions:
+  - version: "1.0"
+    columns:
+      - {name: cell_id,            type: VARCHAR, nullable: false}
+      - {name: area,               type: VARCHAR, nullable: false, accepted: [MI, TN]}
+      - {name: square_id,          type: INTEGER, nullable: false, min: 1, max: 11466}
+      - {name: centroid_lat,       type: DOUBLE,  nullable: false, min: 45.0, max: 47.2}
+      - {name: centroid_lon,       type: DOUBLE,  nullable: false, min: 8.5,  max: 12.0}
+      - {name: cell_size_m,        type: INTEGER, nullable: false, accepted: [235, 1000]}
+      - {name: site_class,         type: VARCHAR, nullable: false, accepted: [core, urban, suburban, rural]}
+      - {name: radio_band,         type: VARCHAR, nullable: false, accepted: [LTE1800, LTE800+1800, UMTS2100]}
+      - {name: site_manager_msisdn, type: VARCHAR, nullable: true, pii: mask}

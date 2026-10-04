@@ -1,0 +1,60 @@
+# Everything that is a decision rather than code lives here.
+
+timezone: Europe/Rome
+
+# Default demo window: two full billing cycles. Set end to 2014-01-01 for the full dataset.
+window:
+  start: 2013-11-01
+  end: 2013-11-28
+
+areas:
+  MI: {name: Milano, cell_size_m: 235}
+  TN: {name: Trentino, cell_size_m: 1000}
+
+paths:
+  raw_cache: data/raw_cache
+  landing: data/landing
+  warehouse: data/warehouse/ninebar.duckdb
+  lineage_events: data/lineage
+  reports: outputs
+
+cadences:
+  daily:
+    # A "day" is the Europe/Rome calendar day, [00:00, 24:00) local. That is also
+    # how the source files are cut. On DST days this is 23h or 25h, so the
+    # expected slot count is 138 / 150 instead of 144.
+    day_boundary: "00:00 Europe/Rome"
+    schedule: "06:00 Europe/Rome every day, for the previous day"
+  weekly:
+    # ISO week, Monday 00:00 Europe/Rome.
+    anchor_weekday: monday
+    schedule: "07:00 Europe/Rome every Monday, for the week that just closed"
+  fortnightly:
+    # 14-day billing cycle anchored on Friday 2013-11-01 00:00 Europe/Rome.
+    # Cycle boundaries deliberately fall mid-ISO-week, so weekly and fortnightly
+    # totals cannot be stitched together and must be reconciled day by day.
+    anchor_date: 2013-11-01
+    length_days: 14
+    schedule: "07:30 Europe/Rome on the day after a cycle closes"
+
+quality:
+  # If more than this share of an arrival's rows is quarantined, the arrival is
+  # failed as a whole and nothing from it reaches silver.
+  max_quarantine_ratio: 0.01
+  # Daily mart rows below this slot completeness are flagged, not dropped.
+  min_slot_completeness: 0.9
+
+late_data:
+  # A file is "late" if it arrives after the daily partition it feeds was published.
+  # Late files inside this horizon (days after file_date) are applied and the
+  # affected daily/weekly/fortnightly partitions are restated with version+1.
+  # Older than that they are held and need an explicit `ninebar replay`.
+  auto_restate_horizon_days: 14
+
+retries:
+  max_attempts: 3
+  backoff_seconds: 0.5
+
+masking:
+  # Salt for hashing subscriber-identifying fields. Override with NINEBAR_MASK_SALT.
+  default_salt: "dev-only-salt-change-me"

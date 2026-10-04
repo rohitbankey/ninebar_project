@@ -1,0 +1,6 @@
+arrival_id,run_id,kind,file_date,local_date,detail,detected_at
+12,6,late_file,2013-11-04,2013-11-04,daily mart v1 already published; will be restated,2026-10-02 17:37:50.108+00
+27,15,late_file,2013-11-05,2013-11-05,daily mart v1 already published; will be restated,2026-10-02 17:43:59.153+00
+30,16,correction,2013-11-07,2013-11-07,daily mart v1 already published; will be restated,2026-10-02 17:45:17.958+00
+47,27,late_file,2013-11-21,2013-11-21,daily mart v1 already published; will be restated,2026-10-02 17:53:40.726+00
+22,38,replay,2013-11-10,2013-11-10,daily mart v1 already published; will be restated,2026-10-02 18:00:54.93+00

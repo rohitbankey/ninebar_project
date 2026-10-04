@@ -1,0 +1,2098 @@
+[
+ {
+  "src_dataset": "gold.daily_cell_usage",
+  "src_column": "area",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.daily_cell_usage",
+  "src_column": "internet_total",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.daily_cell_usage",
+  "src_column": "internet_total",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "daily_mart_internet",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.daily_cell_usage",
+  "src_column": "internet_total",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "daily_mismatch_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.daily_cell_usage",
+  "src_column": "internet_total",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "status",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.daily_cell_usage",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.daily_cell_usage",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.daily_cell_usage",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "daily_mart_rows",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.daily_cell_usage",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "daily_mismatch_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.daily_cell_usage",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "days_in_daily_mart",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.daily_cell_usage",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "status",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.fortnightly_settlement",
+  "src_column": "area",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.fortnightly_settlement",
+  "src_column": "cycle_start",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.fortnightly_settlement",
+  "src_column": "internet_units",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.fortnightly_settlement",
+  "src_column": "internet_units",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "settlement_internet",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.fortnightly_settlement",
+  "src_column": "internet_units",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "status",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.fortnightly_settlement",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.fortnightly_settlement",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "settlement_rows",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.fortnightly_settlement",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "status",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "area",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "internet_total",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "internet_total",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "status",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "internet_total",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "weekly_internet_on_covered_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "internet_total",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "weekly_mismatch_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "status",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "weekly_mismatch_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "days_in_weekly_controls",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "days_without_closed_week",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "silver_rows_on_covered_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "status",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "weekly_mismatch_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "gold.weekly_day_control",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "weekly_rows_on_covered_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "call_in",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "call_in",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "call_in",
+  "edge_kind": "projection",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "call_out",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "call_out",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "call_out",
+  "edge_kind": "projection",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "country_code",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "country_code",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "country_code",
+  "edge_kind": "projection",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "internet",
+  "edge_kind": "projection",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "sms_in",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "sms_in",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "sms_in",
+  "edge_kind": "projection",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "sms_out",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "sms_out",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "sms_out",
+  "edge_kind": "projection",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "square_id",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "square_id",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "cell_id",
+  "edge_kind": "projection",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "square_id",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "square_id",
+  "edge_kind": "projection",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "time_interval",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "time_interval",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "local_date",
+  "edge_kind": "projection",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cdr_activity",
+  "src_column": "time_interval",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "slot_start_utc",
+  "edge_kind": "projection",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "area",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "area",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "area",
+  "edge_kind": "projection",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "cell_id",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "cell_id",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "cell_id",
+  "edge_kind": "projection",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "cell_size_m",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "cell_size_m",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "cell_size_m",
+  "edge_kind": "projection",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "centroid_lat",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "centroid_lat",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "centroid_lat",
+  "edge_kind": "projection",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "centroid_lon",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "centroid_lon",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "centroid_lon",
+  "edge_kind": "projection",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "radio_band",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "radio_band",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "radio_band",
+  "edge_kind": "projection",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "site_class",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "site_class",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "site_class",
+  "edge_kind": "projection",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "site_manager_msisdn",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "site_manager_msisdn",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "site_manager_hash",
+  "edge_kind": "projection",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "square_id",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.cell_site",
+  "src_column": "square_id",
+  "dst_dataset": "silver.dim_cell_site",
+  "dst_column": "square_id",
+  "edge_kind": "projection",
+  "job": "ingest.cell_site"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "country_code",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "country_code",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "country_code",
+  "edge_kind": "projection",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "plan_name",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "plan_name",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "plan_name",
+  "edge_kind": "projection",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "rate_call",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "rate_call",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "rate_call",
+  "edge_kind": "projection",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "rate_internet",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "rate_internet",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "rate_internet",
+  "edge_kind": "projection",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "rate_sms",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "rate_sms",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "rate_sms",
+  "edge_kind": "projection",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "zone",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "landing.tariff_plan",
+  "src_column": "zone",
+  "dst_dataset": "silver.dim_tariff_plan",
+  "dst_column": "zone",
+  "edge_kind": "projection",
+  "job": "ingest.tariff_plan"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "area",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "area",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "area",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "area",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "area",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "area",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "area",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "area",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "area",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "call_in",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "call_in",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "call_in",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "call_in",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "call_in",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "call_units",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "call_out",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "call_out",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "call_out",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "call_out",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "call_out",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "call_units",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "cell_id",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "cell_id",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "cell_id",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "country_code",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "country_code",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "country_code",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "daily_mismatch_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "silver_internet",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "status",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "weekly_mismatch_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "internet",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "peak_internet_slot_utc",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "peak_internet_slot_value",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "internet",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "internet_units",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "daily_mismatch_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "days_without_closed_week",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "status",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnight_reconciliation",
+  "dst_column": "weekly_mismatch_days",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnight_reconciliation"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "local_date",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "local_date",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "local_date",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "local_date",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "local_date",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "local_date",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "slot_start_utc",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "slot_start_utc",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "peak_internet_slot_utc",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "sms_in",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "sms_in",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "sms_in",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "sms_in",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "sms_in",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "sms_units",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "sms_out",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "sms_out",
+  "dst_dataset": "silver.usage_cell_day",
+  "dst_column": "sms_out",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_cell_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "sms_out",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.cdr_activity",
+  "src_column": "sms_out",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "sms_units",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "cell_id",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "cell_id",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "cell_size_m",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "cell_size_m",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "cell_size_m",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "cell_size_m",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "internet_per_km2",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "radio_band",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "radio_band",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "radio_band",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "site_class",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "site_class",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "site_class",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "valid_from",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "valid_from",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "valid_to",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.dim_cell_site",
+  "src_column": "valid_to",
+  "dst_dataset": "silver.cdr_activity",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "ingest.cdr_activity"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "country_code",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "country_code",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "matched_prefix",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "plan_name",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "plan_name",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "plan_name",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "rate_call",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "rate_call",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "rate_call",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "rate_internet",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "rate_internet",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "rate_internet",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "rate_sms",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "rate_sms",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "rate_sms",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "valid_from",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "valid_from",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "plan_valid_from",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "valid_to",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "zone",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.dim_tariff_plan",
+  "src_column": "zone",
+  "dst_dataset": "silver.usage_zone_day",
+  "dst_column": "zone",
+  "edge_kind": "projection",
+  "job": "model.silver.usage_zone_day"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "area",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "area",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "area",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "area",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "internet_rank_in_area",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "area",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "area",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "area",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "area",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "area",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "area",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_in",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_in",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "call_total",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_in",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_in",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "call_total",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_in",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_in",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "call_total",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_out",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_out",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "call_total",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_out",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_out",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "call_total",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_out",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "call_out",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "call_total",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "cell_id",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "cell_id",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "cell_id",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "cell_id",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "cell_id",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "cell_id",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "internet_per_km2",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "internet_rank_in_area",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "internet_total",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "busiest_day",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "internet_total",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "internet_wow_change",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "weekday_avg_internet",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "weekend_avg_internet",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "weekend_to_weekday_ratio",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "internet",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "internet_total",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "expected_slots",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "local_date",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "low_completeness",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "slot_completeness",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "busiest_day",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "week_start",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "weekday_avg_internet",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "weekend_avg_internet",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "weekend_to_weekday_ratio",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "local_date",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "week_start",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "peak_internet_slot_utc",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "peak_internet_slot_utc",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "peak_internet_slot_local",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "slots_observed",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "slots_observed",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "low_completeness",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "slots_observed",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "slot_completeness",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "slots_observed",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "slots_observed",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_in",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_in",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "sms_total",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_in",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_in",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "sms_total",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_in",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_in",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "sms_total",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_out",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_out",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "sms_total",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_out",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_out",
+  "dst_dataset": "gold.weekly_cell_rollup",
+  "dst_column": "sms_total",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_cell_rollup"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_out",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "sms_out",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "sms_total",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.daily_cell_usage",
+  "dst_column": "source_rows",
+  "edge_kind": "projection",
+  "job": "model.gold.daily_cell_usage"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_cell_day",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.weekly_day_control",
+  "dst_column": "source_rows",
+  "edge_kind": "projection",
+  "job": "model.gold.weekly_day_control"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "area",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "area",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "area",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "call_units",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "call_units",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "call_units",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "call_units",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "est_charge",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "country_code",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "country_code",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "country_codes",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "internet_units",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "internet_units",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "est_charge",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "internet_units",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "internet_units",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "days_present",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "priced_from",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "local_date",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "priced_to",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "plan_name",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "plan_name",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "plan_name",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "rate_call",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "rate_call",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "est_charge",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "rate_call",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "rate_call",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "rate_internet",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "rate_internet",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "est_charge",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "rate_internet",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "rate_internet",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "rate_sms",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "rate_sms",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "est_charge",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "rate_sms",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "rate_sms",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "sms_units",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "sms_units",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "est_charge",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "sms_units",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "sms_units",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "source_rows",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "source_rows",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "zone",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "*",
+  "edge_kind": "reference",
+  "job": "model.gold.fortnightly_settlement"
+ },
+ {
+  "src_dataset": "silver.usage_zone_day",
+  "src_column": "zone",
+  "dst_dataset": "gold.fortnightly_settlement",
+  "dst_column": "zone",
+  "edge_kind": "projection",
+  "job": "model.gold.fortnightly_settlement"
+ }
+]

@@ -1,0 +1,309 @@
+reset done (raw_cache kept)
+
+=== 2013-11-01 (Fri) ===
+   landed cell_site snapshot 2013-11-01 -> arrival 1 PENDING
+   landed tariff_plan snapshot 2013-11-01 -> arrival 2 PENDING
+   landed MI 2013-11-01 (dataverse) -> arrival 3 PENDING
+   landed TN 2013-11-01 (dataverse) -> arrival 4 PENDING
+-- daily run for 2013-11-01 (Europe/Rome day 2013-11-01 00:00 -> 2013-11-02 00:00)
+   ingested cell_site snapshot 2013-11-01: new 16575, changed 0, closed 0
+   ingested tariff_plan snapshot 2013-11-01: new 116, changed 0, closed 0
+   ingested MI 2013-11-01 #3: read 4,842,625 quarantined 0 dupes 0 | +4,842,625 ~0 -0 =0
+   ingested TN 2013-11-01 #4: read 2,459,324 quarantined 0 dupes 0 | +2,459,324 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-01] 16,259 rows PUBLISHED
+
+=== 2013-11-02 (Sat) ===
+   landed MI 2013-11-02 (dataverse) -> arrival 5 PENDING
+   landed TN 2013-11-02 (dataverse) -> arrival 6 PENDING
+-- daily run for 2013-11-02 (Europe/Rome day 2013-11-02 00:00 -> 2013-11-03 00:00)
+   ingested MI 2013-11-02 #5: read 4,745,086 quarantined 0 dupes 0 | +4,745,086 ~0 -0 =0
+   ingested TN 2013-11-02 #6: read 2,408,853 quarantined 0 dupes 0 | +2,408,853 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-02] 16,259 rows PUBLISHED
+
+=== 2013-11-03 (Sun) ===
+   landed MI 2013-11-03 (dataverse) -> arrival 7 PENDING
+   landed TN 2013-11-03 (scenario:dirty_rows) -> arrival 8 PENDING
+-- daily run for 2013-11-03 (Europe/Rome day 2013-11-03 00:00 -> 2013-11-04 00:00)
+   ingested MI 2013-11-03 #7: read 4,722,579 quarantined 0 dupes 0 | +4,722,579 ~0 -0 =0
+   ingested TN 2013-11-03 #8: read 2,258,580 quarantined 2,263 dupes 20 | +2,256,297 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-03] 16,248 rows PUBLISHED
+-- weekly run for ISO week 2013-10-28 .. 2013-11-03
+   built gold.weekly_day_control[2013-10-28] 6 rows PUBLISHED_PARTIAL
+   built gold.weekly_cell_rollup[2013-10-28] 16,259 rows PUBLISHED_PARTIAL
+
+=== 2013-11-04 (Mon) ===
+   landed MI 2013-11-04 (scenario:quality_gate) -> arrival 9 PENDING
+   landed TN 2013-11-04 (dataverse) -> arrival 10 PENDING
+-- daily run for 2013-11-04 (Europe/Rome day 2013-11-04 00:00 -> 2013-11-05 00:00)
+   QUALITY GATE: arrival 9 (MI 2013-11-04): 112794/5639513 rows quarantined, threshold 1.0%
+   ingested TN 2013-11-04 #10: read 2,347,088 quarantined 0 dupes 0 | +2,347,088 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-04] 6,259 rows PUBLISHED_PARTIAL
+
+=== 2013-11-05 (Tue) ===
+   landed MI 2013-11-05 (dataverse) -> arrival 11 PENDING
+   [scenario] TN 2013-11-05 not delivered on time
+   [scenario] provider re-sends the real MI 2013-11-04 file after the quality gate rejected the broken one
+   landed MI 2013-11-04 (dataverse:resend) -> arrival 12 PENDING
+-- daily run for 2013-11-05 (Europe/Rome day 2013-11-05 00:00 -> 2013-11-06 00:00)
+   ingested MI 2013-11-04 #12: read 5,639,488 quarantined 0 dupes 0 | +5,639,488 ~0 -0 =0
+   ingested MI 2013-11-05 #11: read 5,874,140 quarantined 0 dupes 0 | +5,874,140 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-04] 16,259 rows PUBLISHED (restated v2)
+   built gold.daily_cell_usage[2013-11-05] 10,000 rows PUBLISHED_PARTIAL
+
+=== 2013-11-06 (Wed) ===
+   landed MI 2013-11-06 (dataverse) -> arrival 13 PENDING
+   landed TN 2013-11-06 (dataverse) -> arrival 14 PENDING
+-- daily run for 2013-11-06 (Europe/Rome day 2013-11-06 00:00 -> 2013-11-07 00:00)
+   ingested MI 2013-11-06 #13: read 5,912,097 quarantined 0 dupes 0 | +5,912,097 ~0 -0 =0
+   ingested TN 2013-11-06 #14: read 2,402,962 quarantined 0 dupes 0 | +2,402,962 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-06] 16,259 rows PUBLISHED
+
+=== 2013-11-07 (Thu) ===
+   landed MI 2013-11-07 (dataverse) -> arrival 15 PENDING
+   landed TN 2013-11-07 (dataverse) -> arrival 16 PENDING
+-- daily run for 2013-11-07 (Europe/Rome day 2013-11-07 00:00 -> 2013-11-08 00:00)
+   ingested MI 2013-11-07 #15: read 5,886,883 quarantined 0 dupes 0 | +5,886,883 ~0 -0 =0
+   ingested TN 2013-11-07 #16: read 2,407,915 quarantined 0 dupes 0 | +2,407,915 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-07] 16,259 rows PUBLISHED
+
+=== 2013-11-08 (Fri) ===
+   landed MI 2013-11-08 (dataverse) -> arrival 17 PENDING
+   landed TN 2013-11-08 (dataverse) -> arrival 18 PENDING
+   [scenario] daily run killed mid-merge (NINEBAR_CRASH_AT=silver_merge:TN)
+!! injected crash at silver_merge [TN:2013-11-08]
+   crashed run exited with code 97
+   after crash: TN 2013-11-08 rows in silver = 0, manifest status = PENDING -> re-running
+-- daily run for 2013-11-08 (Europe/Rome day 2013-11-08 00:00 -> 2013-11-09 00:00)
+   note: run 9 never finished -> marked CRASHED
+   ingested TN 2013-11-08 #18: read 2,395,306 quarantined 0 dupes 0 | +2,395,306 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-08] 16,259 rows PUBLISHED
+   crash recovery: TN 2013-11-08 silver rows 2,395,306 vs file lines 2,395,306, duplicate keys 0
+
+=== 2013-11-09 (Sat) ===
+   landed MI 2013-11-09 (dataverse) -> arrival 19 PENDING
+   landed TN 2013-11-09 (dataverse) -> arrival 20 PENDING
+-- daily run for 2013-11-09 (Europe/Rome day 2013-11-09 00:00 -> 2013-11-10 00:00)
+   ingested MI 2013-11-09 #19: read 5,052,416 quarantined 0 dupes 0 | +5,052,416 ~0 -0 =0
+   ingested TN 2013-11-09 #20: read 2,241,729 quarantined 0 dupes 0 | +2,241,729 ~0 -0 =0
+   build:gold.daily_cell_usage:2013-11-09: injected transient failure at build [gold.daily_cell_usage:2013-11-09] -> retry 2/3
+   built gold.daily_cell_usage[2013-11-09] 16,248 rows PUBLISHED
+
+=== 2013-11-10 (Sun) ===
+   landed MI 2013-11-10 (dataverse) -> arrival 21 PENDING
+   landed TN 2013-11-10 (dataverse) -> arrival 22 PENDING
+-- daily run for 2013-11-10 (Europe/Rome day 2013-11-10 00:00 -> 2013-11-11 00:00)
+   ingested MI 2013-11-10 #21: read 4,731,582 quarantined 0 dupes 0 | +4,731,582 ~0 -0 =0
+   ingested TN 2013-11-10 #22: read 2,155,482 quarantined 0 dupes 0 | +2,155,482 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-10] 16,259 rows PUBLISHED
+-- weekly run for ISO week 2013-11-04 .. 2013-11-10
+   built gold.weekly_day_control[2013-11-04] 13 rows PUBLISHED_PARTIAL
+   built gold.weekly_cell_rollup[2013-11-04] 16,259 rows PUBLISHED_PARTIAL
+
+=== 2013-11-11 (Mon) ===
+   landed MI 2013-11-11 (dataverse) -> arrival 23 PENDING
+   landed TN 2013-11-11 (dataverse) -> arrival 24 PENDING
+-- daily run for 2013-11-11 (Europe/Rome day 2013-11-11 00:00 -> 2013-11-12 00:00)
+   ingested MI 2013-11-11 #23: read 5,478,993 quarantined 0 dupes 0 | +5,478,993 ~0 -0 =0
+   ingested TN 2013-11-11 #24: read 2,328,687 quarantined 0 dupes 0 | +2,328,687 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-11] 16,259 rows PUBLISHED
+
+=== 2013-11-12 (Tue) ===
+   landed MI 2013-11-12 (dataverse) -> arrival 25 PENDING
+   landed TN 2013-11-12 (dataverse) -> arrival 26 PENDING
+   [scenario] TN 2013-11-05 finally arrives, a week late
+   landed TN 2013-11-05 (dataverse:late) -> arrival 27 PENDING
+-- daily run for 2013-11-12 (Europe/Rome day 2013-11-12 00:00 -> 2013-11-13 00:00)
+   ingested TN 2013-11-05 #27: read 2,409,241 quarantined 0 dupes 0 | +2,409,241 ~0 -0 =0
+   ingested MI 2013-11-12 #25: read 5,597,591 quarantined 0 dupes 0 | +5,597,591 ~0 -0 =0
+   ingested TN 2013-11-12 #26: read 2,372,853 quarantined 0 dupes 0 | +2,372,853 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-05] 16,259 rows PUBLISHED (restated v2)
+   built gold.daily_cell_usage[2013-11-12] 16,259 rows PUBLISHED
+
+=== 2013-11-13 (Wed) ===
+   landed MI 2013-11-13 (dataverse) -> arrival 28 PENDING
+   landed TN 2013-11-13 (dataverse) -> arrival 29 PENDING
+   [scenario] corrected re-delivery of MI 2013-11-07 (4 rows differ)
+   landed MI 2013-11-07 (scenario:correction) -> arrival 30 PENDING
+-- daily run for 2013-11-13 (Europe/Rome day 2013-11-13 00:00 -> 2013-11-14 00:00)
+   ingested MI 2013-11-07 #30: read 5,886,883 quarantined 0 dupes 0 | +0 ~4 -0 =5,886,879
+   ingested MI 2013-11-13 #28: read 5,689,517 quarantined 0 dupes 0 | +5,689,517 ~0 -0 =0
+   ingested TN 2013-11-13 #29: read 2,353,796 quarantined 0 dupes 0 | +2,353,796 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-07] 16,259 rows PUBLISHED (restated v2)
+   built gold.daily_cell_usage[2013-11-13] 16,259 rows PUBLISHED
+
+=== 2013-11-14 (Thu) ===
+   landed MI 2013-11-14 (dataverse) -> arrival 31 PENDING
+   landed TN 2013-11-14 (dataverse) -> arrival 32 PENDING
+-- daily run for 2013-11-14 (Europe/Rome day 2013-11-14 00:00 -> 2013-11-15 00:00)
+   ingested MI 2013-11-14 #31: read 5,703,373 quarantined 0 dupes 0 | +5,703,373 ~0 -0 =0
+   ingested TN 2013-11-14 #32: read 2,395,143 quarantined 0 dupes 0 | +2,395,143 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-14] 16,259 rows PUBLISHED
+-- fortnightly run for cycle 2013-11-01 .. 2013-11-14
+   built gold.weekly_day_control[2013-11-04] 14 rows PUBLISHED (restated v2)
+   built gold.weekly_cell_rollup[2013-11-04] 16,259 rows PUBLISHED (restated v2)
+   built gold.fortnightly_settlement[2013-11-01] 10 rows PUBLISHED
+   built gold.fortnight_reconciliation[2013-11-01] 2 rows PUBLISHED
+   reconciliation 2013-11-01 TN: MATCH_WEEKLY_PENDING (weekly pending for 4 days)
+   reconciliation 2013-11-01 MI: MATCH_WEEKLY_PENDING (weekly pending for 4 days)
+
+=== 2013-11-15 (Fri) ===
+   landed MI 2013-11-15 (dataverse) -> arrival 33 PENDING
+   landed TN 2013-11-15 (dataverse) -> arrival 34 PENDING
+-- daily run for 2013-11-15 (Europe/Rome day 2013-11-15 00:00 -> 2013-11-16 00:00)
+   ingested MI 2013-11-15 #33: read 5,708,802 quarantined 0 dupes 0 | +5,708,802 ~0 -0 =0
+   ingested TN 2013-11-15 #34: read 2,395,221 quarantined 0 dupes 0 | +2,395,221 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-15] 16,259 rows PUBLISHED
+
+=== 2013-11-16 (Sat) ===
+   landed MI 2013-11-16 (dataverse) -> arrival 35 PENDING
+   landed TN 2013-11-16 (dataverse) -> arrival 36 PENDING
+-- daily run for 2013-11-16 (Europe/Rome day 2013-11-16 00:00 -> 2013-11-17 00:00)
+   ingested MI 2013-11-16 #35: read 4,847,779 quarantined 0 dupes 0 | +4,847,779 ~0 -0 =0
+   ingested TN 2013-11-16 #36: read 2,239,740 quarantined 0 dupes 0 | +2,239,740 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-16] 16,248 rows PUBLISHED
+
+=== 2013-11-17 (Sun) ===
+   landed MI 2013-11-17 (dataverse) -> arrival 37 PENDING
+   landed TN 2013-11-17 (dataverse) -> arrival 38 PENDING
+-- daily run for 2013-11-17 (Europe/Rome day 2013-11-17 00:00 -> 2013-11-18 00:00)
+   ingested MI 2013-11-17 #37: read 4,611,954 quarantined 0 dupes 0 | +4,611,954 ~0 -0 =0
+   ingested TN 2013-11-17 #38: read 2,116,873 quarantined 0 dupes 0 | +2,116,873 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-17] 16,259 rows PUBLISHED
+-- weekly run for ISO week 2013-11-11 .. 2013-11-17
+   built gold.weekly_day_control[2013-11-11] 14 rows PUBLISHED
+   built gold.weekly_cell_rollup[2013-11-11] 16,259 rows PUBLISHED
+
+=== 2013-11-18 (Mon) ===
+   landed cell_site snapshot 2013-11-18 -> arrival 39 PENDING
+   landed MI 2013-11-18 (dataverse) -> arrival 40 PENDING
+   landed TN 2013-11-18 (dataverse) -> arrival 41 PENDING
+-- daily run for 2013-11-18 (Europe/Rome day 2013-11-18 00:00 -> 2013-11-19 00:00)
+   ingested cell_site snapshot 2013-11-18: new 0, changed 655, closed 0
+   ingested MI 2013-11-18 #40: read 5,417,835 quarantined 0 dupes 0 | +5,417,835 ~0 -0 =0
+   ingested TN 2013-11-18 #41: read 2,281,880 quarantined 0 dupes 0 | +2,281,880 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-18] 16,259 rows PUBLISHED
+
+=== 2013-11-19 (Tue) ===
+   landed MI 2013-11-19 (scenario:additive_column) -> arrival 42 PENDING
+   landed TN 2013-11-19 (dataverse) -> arrival 43 PENDING
+-- daily run for 2013-11-19 (Europe/Rome day 2013-11-19 00:00 -> 2013-11-20 00:00)
+   additive drift on arrival 42: registered cdr_activity v1.1
+   ingested MI 2013-11-19 #42: read 5,577,668 quarantined 0 dupes 0 | +5,577,668 ~0 -0 =0
+   ingested TN 2013-11-19 #43: read 2,352,128 quarantined 0 dupes 0 | +2,352,128 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-19] 16,259 rows PUBLISHED
+
+=== 2013-11-20 (Wed) ===
+   landed tariff_plan snapshot 2013-11-20 -> arrival 44 PENDING
+   landed MI 2013-11-20 (dataverse) -> arrival 45 PENDING
+   landed TN 2013-11-20 (dataverse) -> arrival 46 PENDING
+-- daily run for 2013-11-20 (Europe/Rome day 2013-11-20 00:00 -> 2013-11-21 00:00)
+   ingested tariff_plan snapshot 2013-11-20: new 0, changed 27, closed 0
+   ingested MI 2013-11-20 #45: read 5,643,712 quarantined 0 dupes 0 | +5,643,712 ~0 -0 =0
+   ingested TN 2013-11-20 #46: read 2,400,137 quarantined 0 dupes 0 | +2,400,137 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-20] 16,259 rows PUBLISHED
+
+=== 2013-11-21 (Thu) ===
+   landed MI 2013-11-21 (scenario:renamed_column) -> arrival 47 PENDING
+   landed TN 2013-11-21 (dataverse) -> arrival 48 PENDING
+-- daily run for 2013-11-21 (Europe/Rome day 2013-11-21 00:00 -> 2013-11-22 00:00)
+   HELD arrival 47: missing column 'internet' (canonical 'internet'); probable rename: 'internet' -> 'internet_activity'
+   blast radius -> /home/ulap285/Downloads/SELF/ninebar/outputs/blast_radius_arrival_47.md
+   ingested TN 2013-11-21 #48: read 2,446,418 quarantined 0 dupes 0 | +2,446,418 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-21] 6,259 rows PUBLISHED_PARTIAL
+
+=== 2013-11-22 (Fri) ===
+   landed MI 2013-11-22 (dataverse) -> arrival 49 PENDING
+   landed TN 2013-11-22 (dataverse) -> arrival 50 PENDING
+   [operator] applied 0001_cdr_internet_renamed: cdr_activity v2.0, released 1 held arrival(s)
+-- daily run for 2013-11-22 (Europe/Rome day 2013-11-22 00:00 -> 2013-11-23 00:00)
+   ingested MI 2013-11-21 #47: read 5,616,011 quarantined 0 dupes 0 | +5,616,011 ~0 -0 =0
+   ingested MI 2013-11-22 #49: read 5,634,579 quarantined 0 dupes 0 | +5,634,579 ~0 -0 =0
+   ingested TN 2013-11-22 #50: read 2,425,626 quarantined 0 dupes 0 | +2,425,626 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-21] 16,259 rows PUBLISHED (restated v2)
+   built gold.daily_cell_usage[2013-11-22] 16,259 rows PUBLISHED
+
+=== 2013-11-23 (Sat) ===
+   landed MI 2013-11-23 (dataverse) -> arrival 51 PENDING
+   landed TN 2013-11-23 (dataverse) -> arrival 52 PENDING
+-- daily run for 2013-11-23 (Europe/Rome day 2013-11-23 00:00 -> 2013-11-24 00:00)
+   ingested MI 2013-11-23 #51: read 4,779,119 quarantined 0 dupes 0 | +4,779,119 ~0 -0 =0
+   ingested TN 2013-11-23 #52: read 2,199,957 quarantined 0 dupes 0 | +2,199,957 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-23] 16,259 rows PUBLISHED
+
+=== 2013-11-24 (Sun) ===
+   landed MI 2013-11-24 (dataverse) -> arrival 53 PENDING
+   landed TN 2013-11-24 (dataverse) -> arrival 54 PENDING
+-- daily run for 2013-11-24 (Europe/Rome day 2013-11-24 00:00 -> 2013-11-25 00:00)
+   ingested MI 2013-11-24 #53: read 4,548,405 quarantined 0 dupes 0 | +4,548,405 ~0 -0 =0
+   ingested TN 2013-11-24 #54: read 2,093,272 quarantined 0 dupes 0 | +2,093,272 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-24] 16,259 rows PUBLISHED
+-- weekly run for ISO week 2013-11-18 .. 2013-11-24
+   built gold.weekly_day_control[2013-11-18] 14 rows PUBLISHED
+   built gold.weekly_cell_rollup[2013-11-18] 16,259 rows PUBLISHED
+
+=== 2013-11-25 (Mon) ===
+   landed MI 2013-11-25 (dataverse) -> arrival 55 PENDING
+   landed TN 2013-11-25 (dataverse) -> arrival 56 PENDING
+-- daily run for 2013-11-25 (Europe/Rome day 2013-11-25 00:00 -> 2013-11-26 00:00)
+   ingested MI 2013-11-25 #55: read 5,365,586 quarantined 0 dupes 0 | +5,365,586 ~0 -0 =0
+   ingested TN 2013-11-25 #56: read 2,278,609 quarantined 0 dupes 0 | +2,278,609 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-25] 16,259 rows PUBLISHED
+
+=== 2013-11-26 (Tue) ===
+   landed MI 2013-11-26 (dataverse) -> arrival 57 PENDING
+   landed TN 2013-11-26 (dataverse) -> arrival 58 PENDING
+-- daily run for 2013-11-26 (Europe/Rome day 2013-11-26 00:00 -> 2013-11-27 00:00)
+   ingested MI 2013-11-26 #57: read 5,491,322 quarantined 0 dupes 0 | +5,491,322 ~0 -0 =0
+   ingested TN 2013-11-26 #58: read 2,353,253 quarantined 0 dupes 0 | +2,353,253 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-26] 16,259 rows PUBLISHED
+
+=== 2013-11-27 (Wed) ===
+   landed MI 2013-11-27 (dataverse) -> arrival 59 PENDING
+   landed TN 2013-11-27 (dataverse) -> arrival 60 PENDING
+-- daily run for 2013-11-27 (Europe/Rome day 2013-11-27 00:00 -> 2013-11-28 00:00)
+   ingested MI 2013-11-27 #59: read 5,448,926 quarantined 0 dupes 0 | +5,448,926 ~0 -0 =0
+   ingested TN 2013-11-27 #60: read 2,365,414 quarantined 0 dupes 0 | +2,365,414 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-27] 16,259 rows PUBLISHED
+
+=== 2013-11-28 (Thu) ===
+   landed MI 2013-11-28 (dataverse) -> arrival 61 PENDING
+   landed TN 2013-11-28 (dataverse) -> arrival 62 PENDING
+-- daily run for 2013-11-28 (Europe/Rome day 2013-11-28 00:00 -> 2013-11-29 00:00)
+   ingested MI 2013-11-28 #61: read 5,472,300 quarantined 0 dupes 0 | +5,472,300 ~0 -0 =0
+   ingested TN 2013-11-28 #62: read 2,361,764 quarantined 0 dupes 0 | +2,361,764 ~0 -0 =0
+   built gold.daily_cell_usage[2013-11-28] 16,259 rows PUBLISHED
+-- fortnightly run for cycle 2013-11-15 .. 2013-11-28
+   built gold.fortnightly_settlement[2013-11-15] 12 rows PUBLISHED
+   built gold.fortnight_reconciliation[2013-11-01] 2 rows PUBLISHED (restated v2)
+   built gold.fortnight_reconciliation[2013-11-15] 2 rows PUBLISHED
+   reconciliation 2013-11-15 MI: MATCH_WEEKLY_PENDING (weekly pending for 4 days)
+   reconciliation 2013-11-15 TN: MATCH_WEEKLY_PENDING (weekly pending for 4 days)
+report written to /home/ulap285/Downloads/SELF/ninebar/outputs
+-- replay TN 2013-11-10
+   replay TN 2013-11-10 from arrival 22: +0 ~0 -0 =2,155,482
+-- replay TN 2013-11-10
+   replay TN 2013-11-10 from arrival 22: +0 ~0 -0 =2,155,482
+-- replay TN 2013-11-10
+   replay TN 2013-11-10 from arrival 22: +260,445 ~0 -0 =1,895,037
+   built gold.daily_cell_usage[2013-11-10] 16,259 rows PUBLISHED (restated v2)
+-- backfill 2013-11-14 .. 2013-11-16
+   MI 2013-11-14: +0 ~0 -0 =5,703,373
+   TN 2013-11-14: +0 ~0 -0 =2,395,143
+   MI 2013-11-15: +0 ~0 -0 =5,708,802
+   TN 2013-11-15: +0 ~0 -0 =2,395,221
+   MI 2013-11-16: +0 ~0 -0 =4,847,779
+   TN 2013-11-16: +0 ~0 -0 =2,239,740
+   built gold.weekly_day_control[2013-11-04] 14 rows PUBLISHED (restated v3)
+   built gold.weekly_cell_rollup[2013-11-04] 16,259 rows PUBLISHED (restated v3)
+   built gold.fortnightly_settlement[2013-11-01] 10 rows PUBLISHED (restated v2)
+   built gold.fortnight_reconciliation[2013-11-01] 2 rows PUBLISHED (restated v3)
+-- backfill 2013-11-14 .. 2013-11-16
+   MI 2013-11-14: +0 ~0 -0 =5,703,373
+   TN 2013-11-14: +0 ~0 -0 =2,395,143
+   MI 2013-11-15: +0 ~0 -0 =5,708,802
+   TN 2013-11-15: +0 ~0 -0 =2,395,221
+   MI 2013-11-16: +0 ~0 -0 =4,847,779
+   TN 2013-11-16: +0 ~0 -0 =2,239,740
+report written to /home/ulap285/Downloads/SELF/ninebar/outputs
+
+Done. Representative outputs are in /home/ulap285/Downloads/SELF/ninebar/outputs

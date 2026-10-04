@@ -1,0 +1,20 @@
+# Telecom Italia "sms-call-internet" feed. One row per grid square, per 10-minute
+# slot, per country code. Tab separated. The original files have no header.
+dataset: cdr_activity
+owner: network-data-platform
+format: {delimiter: "\t", header: optional}   # if a header is sent, names are authoritative; if not, position is
+policy:
+  additive: auto      # new nullable columns are registered as a minor version and flow into silver
+  breaking: hold      # rename / removal / type change holds the arrival until a migration is applied
+quarantine_threshold: 0.01
+versions:
+  - version: "1.0"
+    columns:
+      - {name: square_id,     type: INTEGER, nullable: false, min: 1, max: 11466}
+      - {name: time_interval, type: BIGINT,  nullable: false, min: 1356998400000, max: 1420070400000}  # 2013-01-01 .. 2015-01-01, epoch ms UTC
+      - {name: country_code,  type: INTEGER, nullable: false, min: 0, max: 999999}
+      - {name: sms_in,        type: DOUBLE,  nullable: true,  min: 0, max: 100000}
+      - {name: sms_out,       type: DOUBLE,  nullable: true,  min: 0, max: 100000}
+      - {name: call_in,       type: DOUBLE,  nullable: true,  min: 0, max: 100000}
+      - {name: call_out,      type: DOUBLE,  nullable: true,  min: 0, max: 100000}
+      - {name: internet,      type: DOUBLE,  nullable: true,  min: 0, max: 100000}

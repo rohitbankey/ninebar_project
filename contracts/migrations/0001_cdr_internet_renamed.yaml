@@ -1,0 +1,9 @@
+# Provider feed v2 sends a header and calls the internet column "internet_activity".
+# Applying this registers contract 2.0 for cdr_activity, which reads
+# internet_activity into the canonical silver column `internet`. Silver and gold
+# keep their column names, so nothing downstream has to change.
+id: 0001_cdr_internet_renamed
+dataset: cdr_activity
+change:
+  rename: {internet_activity: internet}
+reason: "provider feed v2 renamed internet -> internet_activity (header now included)"

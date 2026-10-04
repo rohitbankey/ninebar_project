@@ -1,0 +1,8 @@
+country_code,zone,plan_name,rate_sms,rate_call,rate_internet
+39,DOMESTIC,IT-national,0.01,0.02,0.005
+0,UNKNOWN,unrated,0.0,0.0,0.0
+30,EU,EU-regulated,0.06,0.19,0.12
+31,EU,EU-regulated,0.06,0.19,0.12
+32,EU,EU-regulated,0.06,0.19,0.12
+33,EU,EU-regulated,0.06,0.19,0.12
+34,EU,EU-regulated,0.06,0.19,0.12
